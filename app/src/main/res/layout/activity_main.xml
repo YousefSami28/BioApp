@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ED3C3F41"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_bio"
+        android:textColor="#AEB0B2" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:src="@drawable/photo"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:strokeColor="@android:color/darker_gray"
+        app:strokeWidth="3.5dp" />
+
+
+    <!--        <androidx.cardview.widget.CardView-->
+    <!--            android:layout_width="155dp"-->
+    <!--            android:layout_height="155dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginTop="15dp"-->
+    <!--            app:cardBackgroundColor="#AEB0B2"-->
+    <!--            app:cardCornerRadius="250dp">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="150dp"-->
+    <!--                android:layout_height="150dp"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                app:cardCornerRadius="250dp">-->
+
+    <!--                <ImageView-->
+    <!--                    android:layout_width="150dp"-->
+    <!--                    android:layout_height="150dp"-->
+    <!--                    android:contentDescription="@string/photo"-->
+    <!--                    android:src="@drawable/photo"-->
+    <!--                    android:scaleType="centerCrop"/>-->
+
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--        </androidx.cardview.widget.CardView>-->
+
+
+    <!--    <android.support.v7.widget.CardView-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:elevation="12dp"-->
+    <!--        android:id="@+id/view2"-->
+    <!--        app:cardCornerRadius="40dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:innerRadius="0dp"-->
+    <!--        android:shape="ring"-->
+    <!--        android:thicknessRatio="1.9">-->
+    <!--        <ImageView-->
+    <!--            android:layout_height="80dp"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:id="@+id/imageView1"-->
+    <!--            android:src="@drawable/photo"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_centerHorizontal="true">-->
+    <!--        </ImageView>-->
+    <!--    </android.support.v7.widget.CardView>-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/yousef_sami"
+        android:textColor="#B6B6B6"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/hobbiesEdtText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:hint="Write your hobbies"
+        android:inputType="text"
+        android:minWidth="230dp"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#B6B6B6"
+        android:textColorHint="#A8AAAC"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@color/black"
+        android:minWidth="100dp"
+        android:text="Add" />
+
+    <TextView
+        android:id="@+id/hobbiesTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:background="#A3A0A0"
+        android:minWidth="300dp"
+        android:minHeight="45dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:minWidth="300dp"
+        android:minHeight="140dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/biotTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxWidth="300dp"
+            android:textColor="#B6B6B6"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
