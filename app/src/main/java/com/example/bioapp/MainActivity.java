@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.action_bar_layout);
-//Test 12345
+
         hobbiesEdtText = (EditText) findViewById(R.id.hobbiesEdtText);
         btnAdd = (Button) findViewById(R.id.btnAdd);
         hobbiesTxtView = (TextView) findViewById(R.id.hobbiesTxtView);
