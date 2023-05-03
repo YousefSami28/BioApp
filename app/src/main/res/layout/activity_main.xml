@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:text="@string/my_bio"
         android:textColor="#AEB0B2" />
+<!--    Comment-->
 
     <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="155dp"
